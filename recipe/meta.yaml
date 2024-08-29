@@ -14,7 +14,7 @@ build:
     - mpacklog = mpacklog.cli:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -38,7 +38,7 @@ test:
 
 about:
   summary: Log dictionaries to file using the MessagePack serialization format.
-  dev_url: https://github.com/tasts-robots/mpacklog.py
+  dev_url: https://github.com/upkie/mpacklog.py
   license: Apache-2.0
   license_file: LICENSE
   home: https://pypi.org/project/mpacklog

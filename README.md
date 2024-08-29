@@ -9,7 +9,7 @@ Package license: Apache-2.0
 
 Summary: Log dictionaries to file using the MessagePack serialization format.
 
-Development: https://github.com/tasts-robots/mpacklog.py
+Development: https://github.com/upkie/mpacklog.py
 
 Current build status
 ====================
