@@ -1,20 +1,20 @@
 {% set name = "mpacklog" %}
-{% set version = "4.0.0" %}
+{% set version = "4.0.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mpacklog-{{ version }}.tar.gz
-  sha256: 00e08f48a04222172480419b9d5be80b597818b87b07d8db152128387d8784d3
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mpacklog-{{ version }}.tar.gz
+  sha256: bf8af84a193c4655ee33e4e41451811b69a0689acacda5e88f3adf837635e113
 
 build:
   entry_points:
     - mpacklog = mpacklog.cli:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
