@@ -18,11 +18,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - flit-core >=2,<4
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - aiofiles >=0.7.0
     - loop-rate-limiters >=1.0.0
     - msgpack-python >=1.0.2
@@ -35,6 +35,7 @@ test:
     - mpacklog --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   summary: Log dictionaries to file using the MessagePack serialization format.
